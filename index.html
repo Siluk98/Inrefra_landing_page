@@ -1,216 +1,141 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Inrefra</title>
-    <!-- Latest compiled and minified CSS -->
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
-<style>
-        /* Make the image fully responsive */
-        .carousel-inner div {
-          width: 100%;
-          height: 100%;
-        }
-        #car0{
-            background-image: url("gfx/car0.jpg");
-            background-size: cover;
-        }
-        #car1{
-            background-image: url("gfx/car1.jpg");
-            background-size: cover;
-        }
-        #car2{
-            background-image: url("gfx/car2.jpg");
-            background-size: cover;
-        }
-        #pics {
-            height: 500px;
-            color: white;
-            width: 100%;
-        }
-        #pics .carousel-inner div{
-            height: 500px;
-            width: 100%;
-        }
-        footer div{
-            background-color: #1f1f1f;
-            
-        }
-        #ffirst{
-            color: white;
-            height: 100px;
-            width: 100%;
-            display: inline-flex;
-            align-items: center;
-        }
-        #fsecond{
-            font-size: 20px;
-            color: #404040;
-            width: 100%;
-            text-align: center;
-            height: 40px;
-        }
-        #ffirst span{
-            
-            flex-grow: 6;
-        }
+  <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta http-equiv="X-UA-Compatible" content="ie=edge">
+      <title>Inrefra</title>
+      <!-- Latest compiled and minified CSS -->
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+      <link rel="stylesheet" href="styles/style.css">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  </head>
 
-        .pipe{
-            color: red;
-            flex-grow: 1;
-        }
-        .redButton{
-            background-color: #D42020;
-            color: white;
-            width: 100%;
-            height: 40px;
-        }
-        #kontakt, #kontakt2{
-            color: white;
-            background-color: #181C53;
-        }
-        #onas, #onas2{
-            color: #181c53;
-        }
-        #oferta, #oferta2{
-            color: white;
-            background-color: #181C53;
-        }
-        input{
-            width: 100%;
-        }
-</style>
-</head>
-<body>
-    <div id="container">
-        <div class="row">
-            <div id="pics" class="carousel slide" data-ride="carousel">
+  <body>
+      <div class='container-fluid'>
+          <div class="row">
+              <div id="pics" class="carousel slide" data-ride="carousel">
 
-                <ul class="carousel-indicators">
-                    <li data-target="#pics" data-slide-to="0" class="active"></li>
-                    <li data-target="#pics" data-slide-to="1"></li>
-                    <li data-target="#pics" data-slide-to="2"></li>
-                </ul>
+                  <ul class="carousel-indicators">
+                      <li data-target="#pics" data-slide-to="0" class="active"></li>
+                      <li data-target="#pics" data-slide-to="1"></li>
+                      <li data-target="#pics" data-slide-to="2"></li>
+                  </ul>
 
-                <div class="carousel-inner">
-                    <div class="carousel-item active" id="car0">
-                        <div class="carousel-caption">
-                                <h1>HASŁO</h1>
-                        </div>
-                        <!--<img src="gfx/car0.jpg" alt="nr0">-->
-                    </div>
-                    <div class="carousel-item" id="car1">
-                        <!--<img src="gfx/car1.jpg" alt="nr1">-->
-                        <div class="carousel-caption">
-                                <h1>HASŁO</h1>
-                        </div>
-                    </div>
-                    <div class="carousel-item" id="car2">
-                        <!--<img src="gfx/car2.jpg" alt="nr2">-->
-                        <div class="carousel-caption">
-                                <h1>HASŁO</h1>
-                        </div>
-                    </div>
+                  <div class="carousel-inner">
+                      <div class="carousel-item active" id="car0">
+
+                      </div>
+                      <div class="carousel-item" id="car1">
+
+                      </div>
+                      <div class="carousel-item" id="car2">
+                          <!--<img src="gfx/car2.jpg" alt="nr2">-->
+                      </div>
+                  </div>
+
+                  <div class="slogan">
+                          <h1>HASŁO</h1>
+                  </div>
+              </div>
+          </div>
+        </div><!-- carousel -->
+
+        <div class='container-fluid container-dark'>
+          <div class='container'>
+            <div class="row" id="oferta">
+                <h2>OFERTA</h2>
+            </div>
+            <div class="row" id="oferta2">
+              <div class="col">
+                    <ul>
+                        <li>jeden</li>
+                        <li><b>DWA</b></li>
+                        <li>etc</li>
+                    </ul>
+              </div>
+              <div class="col">
+                    <ul>
+                        <li>trzy</li>
+                        <li>cztery</li>
+                        <li>etc</li>
+                    </ul>
+              </div>
+            </div><!-- /oferta2 -->
+          </div><!-- /container -->
+        </div>
+
+        <div class='container-fluid container-light'>
+          <div class='container'>
+            <div class="row" id="onas">
+                <h2>O NAS</h2>
+            </div>
+            <div class="row" id="onas2">
+                <div class="col">
+                    <p>Firma INREFRA powstała na bazie ponad dwudziestoletnich doświadczeń w zakresie projektowania, nadzoru i wykonawstwa wyłożeń ogniotrwałych, uzyskanych w dużych przedsiębiorstwach działających na rynkach światowych w branży urządzeń cieplnych i materiałów ogniotrwałych.</p>
+                    <a href="onas.html">WIĘCEJ INFORMACJI >></a>
+                    <a href="#kontakt"><div class="redButton">SKONTAKTUJ SIĘ Z NAMI</div>></a>
                 </div>
-
-                <a class="carousel-control-prev" href="#pics" data-slide="prev">
-                    <span class="carousel-control-prev-icon"></span>
-                </a>
-                <a class="carousel-control-next" href="#pics" data-slide="next">
-                    <span class="carousel-control-next-icon"></span>
-                </a>
-                
-            </div>
-        </div>
-
-        <div class="row" id="oferta">
-            <h2>OFERTA</h2>
-        </div>
-        <div class="row" id="oferta2">
-            <div class="col">
-                <ul>
-                    <li>jeden</li>
-                    <li><b>DWA</b></li>
-                    <li>etc</li>
-                </ul>
-            </div>
-            <div class="col">
-                <ul>
-                    <li>trzy</li>
-                    <li>cztery</li>
-                    <li>etc</li>
-                </ul>
-            </div>
-        </div>
-
-        <div class="row" id="onas">
-            <h2>O NAS</h2>
-        </div>
-        <div class="row" id="onas2">
-            <div class="col">
-                <p>Firma INREFRA powstała na bazie ponad dwudziestoletnich doświadczeń w zakresie projektowania, nadzoru i wykonawstwa wyłożeń ogniotrwałych, uzyskanych w dużych przedsiębiorstwach działających na rynkach światowych w branży urządzeń cieplnych i materiałów ogniotrwałych.</p>
-                <a href="onas.html">WIĘCEJ INFORMACJI >></a>
-                <a href="#kontakt"><div class="redButton">SKONTAKTUJ SIĘ Z NAMI</div>></a>
-            </div>
-            <div class="col">
-                <img src="gfx/render3.png" alt="piec" width="100%">
-            </div>
-        </div>
-
-
-
-        <div class="row" id="kontakt">
-                <h2>KONTAKT</h2>
-        </div>
-        <div class="row" id="kontakt2">
-            <div class="container">
-                <div class="row">
-                        <p>Tekst lorem ipsum chuj</p>
+                <div class="col">
+                    <img src="gfx/render3.png" alt="piec" width="100%">
                 </div>
-                <form action="mailer.php" method="POST">
+            </div>
+          </div>
+        </div>
+
+        <div class='container-fluid container-dark'>
+          <div class='container'>
+            <div class="row" id="kontakt">
+                    <h2>KONTAKT</h2>
+            </div>
+            <div class="row" id="kontakt2">
+                <div class="container">
                     <div class="row">
-                        <div class="col">
-                                <input type="text" name="subject" placeholder="Temat?" required>
-                        </div>    
-                        <div class="col">
-                                <input type="email" name="from" placeholder="Twój adres e-mail" required>
-                        </div>
-                            
+                            <p>Tekst lorem ipsum chuj</p>
                     </div>
-                    <div class="row">
+
+                    <form action="mailer.php" method="POST">
+                        <div class="row">
+                          <div class="col">
+                            <input type="text" name="subject" placeholder="Twoje imię" required>
+                          </div>
+                          <div class="col">
+                            <input type="email" name="from" placeholder="Twój adres e-mail" required>
+                          </div>
+                        </div>
+
+                        <div class="row">
                             <input type="text" name="message" placeholder="Jakie masz pytanie?" required>
-                    </div>
-                    
-                    <div class="row">
-                            <div class="col">
-                                <input class="redButton" type="submit" value="Wyślij">
-                            </div>
-                            <div class="col">
-                            </div>
-                    </div>
-                    
-                </form>
+                        </div>
+
+                        <div class="row">
+                          <div class="col">
+                            <input class="redButton" type="submit" value="Wyślij">
+                          </div>
+                          <div class="col">
+                          </div>
+                        </div>
+                    </form>
+
+                </div>
             </div>
+          </div>
         </div>
-
-
-        <footer class="row">
-            <div id="ffirst">
-                <span><img src="gfx/logosmall.png" alt="logo" width="100px" height="80%"></span>
-                <span class="pipe"> | </span>
-                <span>Kraków, ul. asdasdasd 123, 00-000 Kraków</span>
-                <span class="pipe"> | </span>
-                <span>+48 420 234 234</span>
+        <footer class='container-fluid'>
+          <div class='container'>
+            <div class="row footer-contents">
+                <span class='col-3'>
+                  <img src="gfx/logosmall.png" alt="logo" width="100px" height="80%">
+                </span>
+                <span class="col-1 pipe"> | </span>
+                <span class='col-3'>Kraków, ul. asdasdasd 123, 00-000 Kraków</span>
+                <span class="col-1 pipe"> | </span>
+                <span class='col-3'>+48 420 234 234</span>
             </div>
-            <div id="fsecond">
-                <span>design by Karolina Feluś</span>
-            </div>
+          </div>
         </footer>
-    </div>
-</body>
+
+  </body>
 </html>

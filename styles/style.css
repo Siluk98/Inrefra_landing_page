@@ -1,0 +1,99 @@
+/* Make the image fully responsive */
+.carousel-inner div{
+  width: 100%;
+  height: 100%;
+}
+
+.carousel .slogan {
+  position: absolute;
+  bottom: 4rem;
+  left: 5%;
+}
+
+.carousel .carousel-indicators {
+  justify-content: flex-start;
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-bottom: 1.5%;
+}
+
+.carousel .carousel-indicators li {
+  width: 30px;
+  height: 30px;
+  border-radius: 100%;
+  margin-right: 15px;
+  margin-left: 0px;
+  opacity: 1;
+  border: 1px solid #fff;
+  background-color: transparent;
+}
+
+.carousel .carousel-indicators li.active {
+  background-color: #fff;
+}
+
+.container-dark {
+  color: #FFFFFF;
+  background-color: #181C53;
+}
+
+.container-light {
+  color: #181C53;
+  background-color: #fff;
+}
+
+#car0{
+    background-image: url("../gfx/car0.jpg");
+    background-size: cover;
+}
+
+#car1{
+    background-image: url("../gfx/car1.jpg");
+    background-size: cover;
+}
+
+#car2{
+    background-image: url("../gfx/car2.jpg");
+    background-size: cover;
+}
+
+#pics{
+    height: 500px;
+    color: white;
+    width: 100%;
+}
+
+#pics .carousel-inner div{
+    height: 500px;
+    width: 100%;
+}
+
+footer {
+    background-color: #1f1f1f;
+}
+
+footer .footer-contents {
+    color: white;
+    height: 100px;
+    width: 100%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.pipe{
+    color: red;
+    flex-grow: 1;
+}
+
+.redButton{
+    background-color: #D42020;
+    color: white;
+    width: 100%;
+    height: 40px;
+}
+
+
+input{
+    width: 100%;
+}
