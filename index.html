@@ -1,141 +1,190 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-      <meta charset="UTF-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <meta http-equiv="X-UA-Compatible" content="ie=edge">
-      <title>Inrefra</title>
-      <!-- Latest compiled and minified CSS -->
-      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
-      <link rel="stylesheet" href="styles/style.css">
-      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
-      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
-  </head>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Inrefra</title>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+</head>
 
-  <body>
-      <div class='container-fluid'>
-          <div class="row">
-              <div id="pics" class="carousel slide" data-ride="carousel">
+<body>
+<nav class="navbar navbar-expand-lg justify-content-between">
+    <a class="navbar-brand nav-link-local" href="#home">
+        <img src="gfx/inrefra-nonbg.png" alt="INREFRA"/>
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon">
+            <img src="gfx/menu-down.png" alt="menu-down"/>
+        </span>
+    </button>
 
-                  <ul class="carousel-indicators">
-                      <li data-target="#pics" data-slide-to="0" class="active"></li>
-                      <li data-target="#pics" data-slide-to="1"></li>
-                      <li data-target="#pics" data-slide-to="2"></li>
-                  </ul>
-
-                  <div class="carousel-inner">
-                      <div class="carousel-item active" id="car0">
-
-                      </div>
-                      <div class="carousel-item" id="car1">
-
-                      </div>
-                      <div class="carousel-item" id="car2">
-                          <!--<img src="gfx/car2.jpg" alt="nr2">-->
-                      </div>
-                  </div>
-
-                  <div class="slogan">
-                          <h1>HASŁO</h1>
-                  </div>
-              </div>
-          </div>
-        </div><!-- carousel -->
-
-        <div class='container-fluid container-dark'>
-          <div class='container'>
-            <div class="row" id="oferta">
-                <h2>OFERTA</h2>
-            </div>
-            <div class="row" id="oferta2">
-              <div class="col">
-                    <ul>
-                        <li>jeden</li>
-                        <li><b>DWA</b></li>
-                        <li>etc</li>
-                    </ul>
-              </div>
-              <div class="col">
-                    <ul>
-                        <li>trzy</li>
-                        <li>cztery</li>
-                        <li>etc</li>
-                    </ul>
-              </div>
-            </div><!-- /oferta2 -->
-          </div><!-- /container -->
-        </div>
-
-        <div class='container-fluid container-light'>
-          <div class='container'>
-            <div class="row" id="onas">
-                <h2>O NAS</h2>
-            </div>
-            <div class="row" id="onas2">
-                <div class="col">
-                    <p>Firma INREFRA powstała na bazie ponad dwudziestoletnich doświadczeń w zakresie projektowania, nadzoru i wykonawstwa wyłożeń ogniotrwałych, uzyskanych w dużych przedsiębiorstwach działających na rynkach światowych w branży urządzeń cieplnych i materiałów ogniotrwałych.</p>
-                    <a href="onas.html">WIĘCEJ INFORMACJI >></a>
-                    <a href="#kontakt"><div class="redButton">SKONTAKTUJ SIĘ Z NAMI</div>></a>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ml-auto smooth-scroll">
+            <li class="nav-item nav-item-local active">
+                <a class="nav-link" href="#home">Strona główna<span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item nav-item-local">
+                <a class="nav-link" href="#offer">Oferta</a>
+            </li>
+            <li class="nav-item nav-item-local">
+                <a class="nav-link" href="#about">O nas</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="zalety.html">Zalety</a>
+            </li>
+            <li class="nav-item nav-item-local">
+                <a class="nav-link" href="#contact">Kontakt</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+<div id="home" class='container-fluid home'>
+    <div class="row">
+        <div id="pics" class="carousel carousel-pics slide" data-ride="carousel">
+            <div class="carousel-inner">
+                <div class="slogan">
+                    <h1>NASZE HASŁO REKLAMOWE</h1>
                 </div>
-                <div class="col">
-                    <img src="gfx/render3.png" alt="piec" width="100%">
+                <ul class="carousel-indicators">
+                    <li data-target="#pics" data-slide-to="0" class="active"></li>
+                    <li data-target="#pics" data-slide-to="1"></li>
+                    <li class="last" data-target="#pics" data-slide-to="2"></li>
+                </ul>
+
+                <div class="carousel-item active carousel-first" id="car0">
+                </div>
+                <div class="carousel-item carousel-second" id="car1">
+                </div>
+                <div class="carousel-item carousel-third" id="car2">
                 </div>
             </div>
-          </div>
         </div>
+    </div>
+</div><!-- carousel -->
 
-        <div class='container-fluid container-dark'>
-          <div class='container'>
-            <div class="row" id="kontakt">
-                    <h2>KONTAKT</h2>
+<div id="offer" class='container-fluid container-dark container-fix'>
+    <div class="container">
+        <div class="row">
+            <h2>OFERTA</h2>
+        </div>
+        <div class="row justify-content-md-center content">
+            <div class="col-sm-12 col-md-6 offer-list">
+                <div class="line"></div>
+                <ul>
+                    <li>Ekspertyzy wyłożeń ogniotrwałych</li>
+                    <li class="bold">Inżyniering obejmujący następujące procesy:</li>
+                    <li>Modernizacja wyłożenia w pożądanym kierunku (ograniczenie strat ciepła, uzyskanie określonej,
+                        zgodnej z normami, temperatury na obudowie, uzyskanie pożądanej trwałości, obniżenia ceny
+                        wyłożenia itd.) obejmująca obliczenia cieplne w stanie ustalonym i dobór odpowiednich materiałów
+                    </li>
+                    <li>Wykonanie projektu (rysunki CAD 2D, w razie potrzeby 3D, zestawienie materiałowe, krzywa
+                        rozgrzewania)
+                    </li>
+                </ul>
             </div>
-            <div class="row" id="kontakt2">
-                <div class="container">
-                    <div class="row">
-                            <p>Tekst lorem ipsum chuj</p>
+            <div class="col-sm-12 col-md-6 offer-list">
+                <div class="line"></div>
+                <ul>
+                    <li>Dostawa materiałów</li>
+                    <li>Nadzór nad zabudową</li>
+                    <li>Na życzenie - instalacja wyłożenia w kooperacji z firmą wykonawczą</li>
+                    <li class="bold">A także:</li>
+                    <li>Sprzedaż materiałów ogniotrwałych</li>
+                    <li>Inwentaryzacja (i ewentualny odkup) materiałów zalegających w magazynach</li>
+                    <li>Rysunki techniczne CAD</li>
+                    <li>Modelowanie 3D</li>
+                </ul>
+            </div>
+        </div>
+        <div class="row">
+            <a class="btn btn-red" href="#contact">ZAPYTAJ O USŁUGĘ</a>
+        </div>
+    </div><!-- /container -->
+</div>
+
+<div id="about" class='container-fluid container-light container-fix about'>
+    <div class='container'>
+        <div class="row heading" id="onas">
+            <h2>O NAS</h2>
+        </div>
+        <div class="row">
+            <div class="col-sm-12 col-md-7">
+                <p>
+                    Firma INREFRA powstała na bazie ponad dwudziestoletnich doświadczeń w zakresie projektowania,
+                    nadzoru
+                    i wykonawstwa wyłożeń ogniotrwałych, uzyskanych w dużych przedsiębiorstwach działających na rynkach
+                    światowych w branży urządzeń cieplnych i materiałów ogniotrwałych.
+                </p>
+                <a class="outer" href="zalety.html">WIĘCEJ INFORMACJI >></a><br>
+                <a class="btn btn-red" href="#contact">
+                    SKONTAKTUJ SIĘ Z NAMI
+                </a>
+            </div>
+            <div class="col-sm-12 col-md-5 img-container">
+                <img class="img-responsive" src="gfx/render3.png" alt="piec">
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="contact" class='container-fluid container-dark container-fix'>
+    <div class='container'>
+        <div class="row heading">
+            <h2>KONTAKT</h2>
+        </div>
+        <div class="row">
+            <div class="container">
+                <div class="row">
+                    <p>Wypełnij formularz, aby wysłać nam wiadomość i wszelkie pytania na temat naszej oferty e-mailem. Bardzo chętnie odpiszemy tak szybko, jak to będzie możliwe.</p>
+                </div>
+
+                <div class="row">
+                    <div class="col">
+                        <form class="form-contact" action="mailer.php" method="POST">
+                            <div class="form-group form-group-half">
+                                <label for="name">Imię</label>
+                                <input id="name" name="name" placeholder="Twoje imię" type="text" class="form-control"
+                                       required="required">
+                            </div>
+                            <div class="form-group form-group-half">
+                                <label for="email">Email</label>
+                                <input id="email" name="email" placeholder="Twój adres e-mail" type="text" required="required" class="form-control">
+                            </div>
+                            <div class="form-group form-group-full">
+                                <label for="email-content">Jakie masz pytania?</label>
+                                <textarea id="email-content" name="email-content" placeholder="Jakie masz pytania?" cols="40" rows="5" class="form-control"
+                                          required="required"></textarea>
+                            </div>
+                            <div class="form-group form-submit">
+                                <button class="btn btn-red" name="submit" type="submit">WYŚLIJ</button>
+                            </div>
+                        </form>
                     </div>
-
-                    <form action="mailer.php" method="POST">
-                        <div class="row">
-                          <div class="col">
-                            <input type="text" name="subject" placeholder="Twoje imię" required>
-                          </div>
-                          <div class="col">
-                            <input type="email" name="from" placeholder="Twój adres e-mail" required>
-                          </div>
-                        </div>
-
-                        <div class="row">
-                            <input type="text" name="message" placeholder="Jakie masz pytanie?" required>
-                        </div>
-
-                        <div class="row">
-                          <div class="col">
-                            <input class="redButton" type="submit" value="Wyślij">
-                          </div>
-                          <div class="col">
-                          </div>
-                        </div>
-                    </form>
-
                 </div>
             </div>
-          </div>
         </div>
-        <footer class='container-fluid'>
-          <div class='container'>
-            <div class="row footer-contents">
-                <span class='col-3'>
-                  <img src="gfx/logosmall.png" alt="logo" width="100px" height="80%">
-                </span>
-                <span class="col-1 pipe"> | </span>
-                <span class='col-3'>Kraków, ul. asdasdasd 123, 00-000 Kraków</span>
-                <span class="col-1 pipe"> | </span>
-                <span class='col-3'>+48 420 234 234</span>
-            </div>
-          </div>
-        </footer>
-
-  </body>
+    </div>
+</div>
+<footer class='container-fluid container-fix'>
+    <div class='container footer-container'>
+        <div class="row footer-contents">
+            <span class='col-sm-12 col-md-2'>
+                <img class="img-fluid" src="gfx/inrefra-nonbg.png" alt="logo">
+            </span>
+            <span class="col-md-1 pipe">|</span>
+            <span class='col-sm-12 col-md-4'>Kraków, ul. Abcde 123, 00-000 Kraków</span>
+            <span class="col-md-1 pipe"> | </span>
+            <span class='col-sm-12 col-md-2'>+48 420 234 234</span>
+        </div>
+    </div>
+</footer>
+<script src="scripts/main.js"></script>
+</body>
 </html>
