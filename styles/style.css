@@ -21,6 +21,12 @@ h2 {
   margin-bottom: 50px;
   position: relative;
 }
+@media (max-width: 576px) {
+  h2 {
+    font-size: 4rem;
+    line-height: 43px;
+  }
+}
 h5 {
   font-size: 1rem;
   font-weight: bold;
@@ -77,6 +83,11 @@ a.outer {
   z-index: 1000;
   padding: 15px 30px;
 }
+@media (max-width: 991px) {
+  .navbar {
+    background: #181c53;
+  }
+}
 .navbar-subpage {
   background: #181c53;
 }
@@ -85,6 +96,11 @@ a.outer {
 }
 .navbar .nav-item {
   margin-left: 50px;
+}
+@media (max-width: 991px) {
+  .navbar .nav-item {
+    margin-left: 0;
+  }
 }
 .navbar .nav-item.active {
   border: 1px solid #ffffff;
@@ -132,6 +148,11 @@ a.outer {
 .carousel-item {
   background-size: 100% auto;
 }
+@media (max-width: 992px) {
+  .carousel-item {
+    background-size: cover;
+  }
+}
 .carousel-first {
   background-image: url("../gfx/car0.jpg");
 }
@@ -151,6 +172,16 @@ a.outer {
 .carousel-pics .carousel-inner div.carousel-item {
   height: 500px;
   width: 100%;
+}
+@media (max-width: 992px) {
+  .carousel-pics .carousel-inner {
+    height: 70vh;
+  }
+}
+@media (max-width: 992px) {
+  .carousel-pics {
+    height: 70vh;
+  }
 }
 .offer-list {
   position: relative;

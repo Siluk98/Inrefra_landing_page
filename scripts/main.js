@@ -10,7 +10,7 @@ $(document).ready(function () {
         })
         $(this).addClass('active');
 
-        var target = this.hash;
+        var target = this.childNodes[1].hash;
         $target = $(target);
         $('html, body').stop().animate({
             'scrollTop': $target.offset().top
@@ -21,31 +21,34 @@ $(document).ready(function () {
 
     });
 
-   // $('#pros').css('margin-top', $('.navbar').height + 10);
+    if ($('#pros').length) {
+        var heightValue = $('.navbar').height() + 31;
+        $('#pros').css('padding-top', heightValue);
+    }
 
 });
 
-function onScroll(event){
-    var scrollPos = $(document).scrollTop();
+function onScroll(event) {
+    var scrollPos = $(window).scrollTop();
 
-    console.log($('.navbar .nav-item-local'));
-
-    $('.navbar .nav-item-local').each(function () {
+    $('.navbar .nav-item-local .nav-link').each(function () {
         var currLink = $(this);
         var refElement = $(currLink.attr("href"));
-        if (refElement.position().top <= scrollPos && refElement.position().top + refElement.height() > scrollPos) {
-            $('.navbar ul li .nav-item-local').removeClass("active");
-            currLink.addClass("active");
+        if (refElement.offset().top <= scrollPos && refElement.offset().top + refElement.height() > scrollPos) {
+            $(this).parent().removeClass("active");
+            currLink.parent().addClass("active");
         } else {
-            currLink.removeClass("active");
+            currLink.parent().removeClass("active");
         }
     });
 
-    var offset = $('.navbar').position.top;
+    if ($('#offer').length) {
+        var offset = $('#offer').offset().top;
 
-    if (scrollPos >= offset) {
-        $('.navbar').classList.add("navbar-subpage")
-    } else {
-        $('.navbar').classList.remove("navbar-subpage");
+        if (scrollPos >= offset) {
+            $('.navbar').addClass("navbar-subpage")
+        } else {
+            $('.navbar').removeClass("navbar-subpage");
+        }
     }
 }

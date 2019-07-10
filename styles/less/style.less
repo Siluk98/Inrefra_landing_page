@@ -36,6 +36,13 @@ h2 {
   line-height: 52px;
   margin-bottom: 50px;
   position: relative;
+
+  @media (max-width: 576px) {
+    & {
+      font-size: 4rem;
+      line-height: 43px;
+    }
+  }
 }
 
 h5 {
@@ -113,6 +120,12 @@ a.outer {
   z-index: 1000;
   padding: 15px 30px;
 
+  @media (max-width: 991px) {
+    & {
+      background: @navy;
+    }
+  }
+
   &-subpage {
     background: @navy;
   }
@@ -128,6 +141,12 @@ a.outer {
 
     &-item {
       margin-left: 50px;
+
+      @media (max-width: 991px) {
+        & {
+          margin-left: 0;
+        }
+      }
 
       &.active {
         border: 1px solid @white;
@@ -190,6 +209,10 @@ a.outer {
 
   &-item {
     background-size: 100% auto;
+
+    @media (max-width: 992px) {
+      background-size: cover;
+    }
   }
 
   &-first {
@@ -212,10 +235,21 @@ a.outer {
     width: 100%;
 
     .carousel-inner {
-
       div.carousel-item {
         height: 500px;
         width: 100%;
+      }
+
+      @media (max-width: 992px) {
+        & {
+          height: 70vh;
+        }
+      }
+    }
+
+    @media (max-width: 992px) {
+      & {
+        height: 70vh;
       }
     }
   }
