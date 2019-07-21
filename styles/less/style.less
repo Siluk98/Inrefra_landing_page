@@ -32,15 +32,16 @@ h1 {
 
 h2 {
   font-weight: bold;
-  font-size: 5rem;
-  line-height: 52px;
+  font-size: 4.15rem;
+  //line-height: 52px;
   margin-bottom: 50px;
+  text-transform: uppercase;
   position: relative;
 
   @media (max-width: 576px) {
     & {
-      font-size: 4rem;
-      line-height: 43px;
+      font-size: 3.15rem;
+      //line-height: 43px;
     }
   }
 }
@@ -54,6 +55,10 @@ h5 {
 a.outer {
   font-weight: bold;
   font-size: 1.2rem;
+}
+
+p.reason {
+  width: 100%;
 }
 
 .bold {
@@ -133,7 +138,13 @@ a.outer {
   &-brand {
 
     img {
-      height: 30px;
+      height: 50px;
+
+      @media (max-width: 991px) {
+        & {
+          height: 30px;
+        }
+      }
     }
   }
 
@@ -274,6 +285,16 @@ a.outer {
         font-weight: normal;
         vertical-align: middle;
         line-height: 20px;
+      }
+
+      &.nested {
+        left: 10px;
+
+        &:before {
+          left: -32px;
+          font-size: 1.6rem;
+          content: "०";
+        }
       }
 
       &.bold {
